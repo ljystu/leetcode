@@ -42,7 +42,6 @@ public class bulbSwitch {
 
     public static void main(String[] args) {
         bulbSwitch bulbSwitch = new bulbSwitch();
-
         System.out.println(bulbSwitch.bulbSwitch(7));
     }
 }
