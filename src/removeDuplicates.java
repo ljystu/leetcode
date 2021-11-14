@@ -1,0 +1,13 @@
+public class removeDuplicates {
+    public int removeDuplicates(int[] nums) {
+        //
+        int slow = 1, fast = 1;
+        while (fast < nums.length) {
+            if (nums[fast] != nums[slow]) {
+                nums[slow++] = nums[fast];
+            }
+            fast++;
+        }
+        return slow;
+    }
+}
