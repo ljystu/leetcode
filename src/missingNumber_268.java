@@ -1,4 +1,4 @@
-public class missingNumber {
+public class missingNumber_268 {
     public int missingNumber(int[] nums) {
 //        Arrays.sort(nums);
 //        for (int i = 0; i < nums.length; i++) {

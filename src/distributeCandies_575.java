@@ -1,6 +1,6 @@
 import java.util.HashSet;
 
-public class distributeCandies {
+public class distributeCandies_575 {
     /**
      * 575
      *

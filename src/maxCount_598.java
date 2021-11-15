@@ -1,4 +1,4 @@
-public class maxCount {
+public class maxCount_598 {
     public int maxCount(int m, int n, int[][] ops) {
         if (ops.length == 0)
             return m * n;

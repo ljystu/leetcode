@@ -1,4 +1,4 @@
-public class detectCapitalUse {
+public class detectCapitalUse_520 {
     public boolean detectCapitalUse(String word) {
         if (word.length() >= 2 && Character.isLowerCase(word.charAt(0)) && Character.isUpperCase(word.charAt(1)))
             return false;

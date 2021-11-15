@@ -1,6 +1,6 @@
 import java.util.HashMap;
 
-public class longestSubsequence {
+public class longestSubsequence_1218 {
     //动态规划 使用数组超时给i，因而使用hashmap
     public int longestSubsequence(int[] arr, int difference) {
         int max = 1;

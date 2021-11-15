@@ -1,4 +1,4 @@
-public class getHint {
+public class getHint_299 {
     public String getHint(String secret, String guess) {
 //        if (secret.length() != guess.length())
 //            return "0A0B";

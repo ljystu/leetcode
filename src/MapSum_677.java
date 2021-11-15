@@ -2,10 +2,10 @@ import com.sun.org.apache.regexp.internal.RE;
 
 import java.util.HashMap;
 
-class MapSum {
+class MapSum_677 {
 
     HashMap<String,Integer> map;
-    public MapSum() {
+    public MapSum_677() {
         map=new HashMap<>();
     }
 

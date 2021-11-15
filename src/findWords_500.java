@@ -1,8 +1,8 @@
 import java.util.*;
 
-public class findWords {
+public class findWords_500 {
     /**
-     * findWords
+     * findWords_500
      */
     static String line1 = "qwertyuiopQWERTYUIOP";
     static String line2 = "asdfghjklASDFGHJKL";

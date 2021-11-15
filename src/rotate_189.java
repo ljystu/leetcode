@@ -1,4 +1,4 @@
-public class rotate {
+public class rotate_189 {
     public void rotate(int[] nums, int k) {
         k = k % nums.length;
         int[] rotation = new int[k];

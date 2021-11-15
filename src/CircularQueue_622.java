@@ -1,16 +1,11 @@
-import com.sun.org.apache.regexp.internal.REUtil;
-
-import java.util.ArrayList;
-import java.util.List;
-
-class CircularQueue {
+class CircularQueue_622 {
     int front = 0;//队首指针
     int rear = 0;//队尾指针
     int size;
     int data[] ;//顺序队列;//顺序队列
 
     //构造器
-    public CircularQueue(int size) {
+    public CircularQueue_622(int size) {
         this.size = size;
         data = new int[size + 1];
     }
@@ -81,16 +76,16 @@ class CircularQueue {
 
 
     public static void main(String[] args) {
-        CircularQueue circularQueue = new CircularQueue(3); // 设置长度为 3
-        System.out.println(circularQueue.enQueue(1)); // 返回 true
-        System.out.println(circularQueue.enQueue(2)); // 返回 true
-        System.out.println(circularQueue.enQueue(3)); // 返回 true
-        System.out.println(circularQueue.enQueue(4)); // 返回 false，队列已满
-        System.out.println(circularQueue.Rear()); // 返回 3
-        System.out.println(circularQueue.isFull()); // 返回 true
-        System.out.println(circularQueue.deQueue()); // 返回 true
-        System.out.println(circularQueue.enQueue(4));// 返回 true
-        System.out.println(circularQueue.Rear()); // 返回 4
+        CircularQueue_622 circularQueue622 = new CircularQueue_622(3); // 设置长度为 3
+        System.out.println(circularQueue622.enQueue(1)); // 返回 true
+        System.out.println(circularQueue622.enQueue(2)); // 返回 true
+        System.out.println(circularQueue622.enQueue(3)); // 返回 true
+        System.out.println(circularQueue622.enQueue(4)); // 返回 false，队列已满
+        System.out.println(circularQueue622.Rear()); // 返回 3
+        System.out.println(circularQueue622.isFull()); // 返回 true
+        System.out.println(circularQueue622.deQueue()); // 返回 true
+        System.out.println(circularQueue622.enQueue(4));// 返回 true
+        System.out.println(circularQueue622.Rear()); // 返回 4
 
 
     }

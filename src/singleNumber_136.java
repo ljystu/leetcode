@@ -1,4 +1,4 @@
-public class singleNumber {
+public class singleNumber_136 {
     /**
      * 异或运算 136
      *

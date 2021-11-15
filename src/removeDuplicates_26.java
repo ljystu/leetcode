@@ -1,4 +1,4 @@
-public class removeDuplicates {
+public class removeDuplicates_26 {
     public int removeDuplicates(int[] nums) {
         //
         int slow = 1, fast = 1;

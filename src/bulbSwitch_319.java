@@ -1,6 +1,6 @@
-public class bulbSwitch {
+public class bulbSwitch_319 {
     //超时
-//    public int bulbSwitch(int n) {
+//    public int bulbSwitch_319(int n) {
 //        int count = 0;
 //        if (n == 0)
 //            return 0;
@@ -41,8 +41,8 @@ public class bulbSwitch {
     }
 
     public static void main(String[] args) {
-        bulbSwitch bulbSwitch = new bulbSwitch();
+        bulbSwitch_319 bulbSwitch_319 = new bulbSwitch_319();
         
-        System.out.println(bulbSwitch.bulbSwitch(7));
+        System.out.println(bulbSwitch_319.bulbSwitch(7));
     }
 }

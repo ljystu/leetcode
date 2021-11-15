@@ -1,4 +1,4 @@
-public class isPerfectSquare {
+public class isPerfectSquare_367 {
     public boolean isPerfectSquare(int num) {
         double temp = num;
         while (true) {

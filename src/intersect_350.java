@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class intersect {
+public class intersect_350 {
     public int[] intersect(int[] nums1, int[] nums2) {
         //没必要用两个hashmap 重来
 //        List<Integer> result = new ArrayList<>();
