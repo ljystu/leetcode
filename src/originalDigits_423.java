@@ -2,8 +2,9 @@ public class originalDigits_423 {
     public String originalDigits(String s) {
         int[] letters = new int[26];
         int[] nums = new int[10];
-        for (int i = 0; i < s.length(); i++)
+        for (int i = 0; i < s.length(); i++) {
             letters[s.charAt(i) - 'a']++;
+        }
         nums[0] = letters['z' - 'a'];
         nums[2] = letters['w' - 'a'];
         nums[8] = letters['g' - 'a'];
@@ -17,9 +18,11 @@ public class originalDigits_423 {
         String str = "";
         for (int i = 0; i < 10; i++) {
 
-            if (nums[i] > 0)
-                for (int j = 0; j < nums[i]; j++)
+            if (nums[i] > 0) {
+                for (int j = 0; j < nums[i]; j++) {
                     str += i;
+                }
+            }
         }
         return str;
     }

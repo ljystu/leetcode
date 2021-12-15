@@ -23,14 +23,16 @@ public class findTilt_563 {
 
     class Solution {
         public int child(TreeNode root) {
-            if (root == null)
+            if (root == null) {
                 return 0;
+            }
             return child(root.left) + child(root.right) + root.val;
         }
 
         public int findTilt(TreeNode root) {
-            if (root == null)
+            if (root == null) {
                 return 0;
+            }
 
             return Math.abs(child(root.left) - child(root.right)) + findTilt(root.left) + findTilt(root.right);
         }

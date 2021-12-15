@@ -9,8 +9,9 @@ public class DP_minCoins {
 
         for (int i = 0; i < amount + 1; i++) {
             for (int coin : coins) {
-                if (i >= coin)
+                if (i >= coin) {
                     dp[i] = Math.min(dp[i], 1 + dp[i - coin]);
+                }
             }
         }
         return dp[amount] == amount + 1 ? -1 : dp[amount];

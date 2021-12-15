@@ -11,23 +11,27 @@ public class isRectangleCover_391 {
             botLeft[1] = Math.min(botLeft[1], rectangles[i][1]);
             topRight[0] = Math.max(topRight[0], rectangles[i][2]);
             topRight[1] = Math.max(topRight[1], rectangles[i][3]);
-            if (points.contains(rectangles[i][0] + "" + rectangles[i][1]))
+            if (points.contains(rectangles[i][0] + "" + rectangles[i][1])) {
                 points.remove(rectangles[i][0] + "" + rectangles[i][1]);
-            else
+            } else {
                 points.add(rectangles[i][0] + "" + rectangles[i][1]);
-            if (points.contains(rectangles[i][2] + "" + rectangles[i][3]))
+            }
+            if (points.contains(rectangles[i][2] + "" + rectangles[i][3])) {
                 points.remove(rectangles[i][2] + "" + rectangles[i][3]);
-            else
+            } else {
                 points.add(rectangles[i][2] + "" + rectangles[i][3]);
+            }
 
-            if (points.contains(rectangles[i][0] + "" + rectangles[i][3]))
+            if (points.contains(rectangles[i][0] + "" + rectangles[i][3])) {
                 points.remove(rectangles[i][0] + "" + rectangles[i][3]);
-            else
+            } else {
                 points.add(rectangles[i][0] + "" + rectangles[i][3]);
-            if (points.contains(rectangles[i][2] + "" + rectangles[i][1]))
+            }
+            if (points.contains(rectangles[i][2] + "" + rectangles[i][1])) {
                 points.remove(rectangles[i][2] + "" + rectangles[i][1]);
-            else
+            } else {
                 points.add(rectangles[i][2] + "" + rectangles[i][1]);
+            }
 
             square += ((rectangles[i][2] - rectangles[i][0]) * (rectangles[i][3] - rectangles[i][1]));
         }

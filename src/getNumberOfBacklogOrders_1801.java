@@ -35,38 +35,42 @@ public class getNumberOfBacklogOrders_1801 {
         for (int[] order : orders) {
             if (order[2] == 0) {
 
-                while (sellOrders.size() != 0 && sellOrders.peek().getPrice() <= order[0]&& order[1]>0)
-                    if (sellOrders.peek().getNumber() - order[1] < 0){
-                        order[1]-=sellOrders.peek().getNumber();
+                while (sellOrders.size() != 0 && sellOrders.peek().getPrice() <= order[0] && order[1] > 0) {
+                    if (sellOrders.peek().getNumber() - order[1] < 0) {
+                        order[1] -= sellOrders.peek().getNumber();
                         sellOrders.poll();
-                    }
-                    else{
+                    } else {
                         sellOrders.peek().setNumber(sellOrders.peek().getNumber() - order[1]);
-                        order[1]=0;}
-                if(order[1]>0)
+                        order[1] = 0;
+                    }
+                }
+                if (order[1] > 0) {
                     buyOrders.offer(new Order(order[0], order[1]));
+                }
 
             } else {
 
-                while(buyOrders.size() != 0 && buyOrders.peek().getPrice() >= order[0]&& order[1]>0){
-                    if(buyOrders.peek().getNumber() - order[1]<0){
-                        order[1]-=buyOrders.peek().getNumber();
+                while (buyOrders.size() != 0 && buyOrders.peek().getPrice() >= order[0] && order[1] > 0) {
+                    if (buyOrders.peek().getNumber() - order[1] < 0) {
+                        order[1] -= buyOrders.peek().getNumber();
                         buyOrders.poll();
-                    }
-                    else {
+                    } else {
                         buyOrders.peek().setNumber(buyOrders.peek().getNumber() - order[1]);
-                        order[1]=0;
+                        order[1] = 0;
                     }
                 }
-                if(order[1]>0)
+                if (order[1] > 0) {
                     sellOrders.offer(new Order(order[0], order[1]));
+                }
             }
         }
-        long res=0;
-        for(Order order:buyOrders)
-            res+=order.getNumber();
-        for(Order order:sellOrders)
-            res+=order.getNumber();
+        long res = 0;
+        for (Order order : buyOrders) {
+            res += order.getNumber();
+        }
+        for (Order order : sellOrders) {
+            res += order.getNumber();
+        }
         return (int) (res % 1000000007);
     }
 }

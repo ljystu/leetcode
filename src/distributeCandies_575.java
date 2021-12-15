@@ -9,8 +9,9 @@ public class distributeCandies_575 {
      */
     public static int distributeCandies(int[] candyType) {
         HashSet<Integer> candies = new HashSet<>();
-        for (int i = 0; i < candyType.length; i++)
+        for (int i = 0; i < candyType.length; i++) {
             candies.add(candyType[i]);
+        }
         return Math.min(candies.size(), candyType.length / 2);
 
     }

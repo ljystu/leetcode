@@ -23,14 +23,15 @@ public class findRelativeRanks_506 {
                 i < score.length; i++) {
 //            pos = score_list.poll()[0];
             pos = score_list[i][0];
-            if (i == 0)
+            if (i == 0) {
                 result[pos] = "Gold Medal";
-            else if (i == 1)
+            } else if (i == 1) {
                 result[pos] = "Silver Medal";
-            else if (i == 2)
+            } else if (i == 2) {
                 result[pos] = "Bronze Medal";
-            else
+            } else {
                 result[pos] = i + 1 + "";
+            }
         }
         return result;
     }

@@ -19,21 +19,23 @@ public class mergeKLists_23 {
     }
 
     public ListNode mergeKLists(ListNode[] lists) {
-        PriorityQueue<ListNode> queue = new PriorityQueue<>((a,b)->a.val-b.val);
+        PriorityQueue<ListNode> queue = new PriorityQueue<>((a, b) -> a.val - b.val);
         for (ListNode node : lists) {
-            if(node!=null)
+            if (node != null) {
                 queue.add(node);
+            }
         }
         ListNode dummy = new ListNode(0);
-        ListNode current=dummy ;
+        ListNode current = dummy;
 
 
         while (queue.size() != 0) {
-            ListNode temp= queue.poll();
-            current.next =temp;
+            ListNode temp = queue.poll();
+            current.next = temp;
             current = current.next;
-            if(temp.next!=null)
+            if (temp.next != null) {
                 queue.add(temp.next);
+            }
         }
         return dummy.next;
     }

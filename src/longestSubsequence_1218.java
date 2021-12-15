@@ -9,8 +9,9 @@ public class longestSubsequence_1218 {
             if (map.containsKey(arr[i] - difference)) {
                 max = Math.max(map.get(arr[i] - difference) + 1, max);
                 map.put(arr[i], map.get(arr[i] - difference) + 1);
-            } else
+            } else {
                 map.put(arr[i], 1);
+            }
 
 //            for (int j = 0; j < i; j++) {
 //                if (arr[j] + difference == arr[i])

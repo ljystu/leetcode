@@ -10,8 +10,9 @@ public class containsDuplicate_217 {
 //        return false;
         HashSet<Integer> list = new HashSet<Integer>();
         for (int i = 0; i < nums.length; i++) {
-            if (!list.add(nums[i]))
+            if (!list.add(nums[i])) {
                 return true;
+            }
         }
         return false;
     }

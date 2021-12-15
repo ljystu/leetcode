@@ -2,7 +2,7 @@ class CircularQueue_622 {
     int front = 0;//队首指针
     int rear = 0;//队尾指针
     int size;
-    int data[] ;//顺序队列;//顺序队列
+    int data[];//顺序队列;//顺序队列
 
     //构造器
     public CircularQueue_622(int size) {
@@ -13,19 +13,19 @@ class CircularQueue_622 {
     /**
      * 从队首获取元素。如果队列为空，返回 -1
      */
-    int Front(){
-        if(isEmpty()){
+    int Front() {
+        if (isEmpty()) {
             return -1;
         }
-        int temp = (front+1)%data.length;
+        int temp = (front + 1) % data.length;
         return data[temp];
     }
 
     /**
-     *  获取队尾元素。如果队列为空，返回 -1
+     * 获取队尾元素。如果队列为空，返回 -1
      */
-    int Rear(){
-        if(isEmpty()){
+    int Rear() {
+        if (isEmpty()) {
             return -1;
         }
         return data[rear];
@@ -34,45 +34,46 @@ class CircularQueue_622 {
     /**
      * 向循环队列插入一个元素。如果成功插入则返回真
      */
-    boolean enQueue(int val){
+    boolean enQueue(int val) {
         //判断队列是否已满
-        if(isFull()){
+        if (isFull()) {
             return false;
         }
-        rear = (rear +1) % data.length;
+        rear = (rear + 1) % data.length;
         data[rear] = val;
-        return  true;
+        return true;
     }
 
     /**
      * 从循环队列中删除一个元素。如果成功删除则返回真
      */
-    boolean deQueue(){
-        if (isEmpty())
+    boolean deQueue() {
+        if (isEmpty()) {
             return false;
-        front = (front+1)%data.length;
+        }
+        front = (front + 1) % data.length;
         return true;
     }
 
     /**
      * 检查循环队列是否为空
      */
-    boolean isEmpty(){
-        if (rear == front)
+    boolean isEmpty() {
+        if (rear == front) {
             return true;
+        }
         return false;
     }
 
     /**
      * 判断循环队列是否已满
      */
-    boolean isFull(){
-        if((rear+1)%data.length == front){
+    boolean isFull() {
+        if ((rear + 1) % data.length == front) {
             return true;
         }
         return false;
     }
-
 
 
     public static void main(String[] args) {

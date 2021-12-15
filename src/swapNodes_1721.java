@@ -62,8 +62,9 @@ public class swapNodes_1721 {
             last.next = first;
             first.next = temp;
             preNode1.next = last;
-            if(k==1)
-                head=last;
+            if (k == 1) {
+                head = last;
+            }
             return head;
         } else if (first == last) {
             return head;
@@ -81,9 +82,9 @@ public class swapNodes_1721 {
     public static void main(String[] args) {
         ListNode l0 = new ListNode(1);
         ListNode l1 = new ListNode(2);
-        l0.next=l1;
-        swapNodes_1721 swapNodes_1721=new swapNodes_1721();
-        swapNodes_1721.swapNodes(l0,1);
+        l0.next = l1;
+        swapNodes_1721 swapNodes_1721 = new swapNodes_1721();
+        swapNodes_1721.swapNodes(l0, 1);
     }
 
 }
